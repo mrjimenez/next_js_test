@@ -2,9 +2,17 @@ import { useState } from 'react';
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Contador />
+    <div className="container">
+      <head>
+        <meta charset="utf-8" />
+        <title>My Title</title>
+      </head>
+      <body>
+        <div>
+          <h1>Home</h1>
+          <Contador />
+        </div>
+      </body>
     </div>)
 }
 
