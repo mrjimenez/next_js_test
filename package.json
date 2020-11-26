@@ -1,19 +1,10 @@
-# Next_js test
-
-## Inicialização
-
-1. Criação do package.json
-
-```bash
-$ npm init -y
-Wrote to /home/mroberto/rpms/javascript/next_js/next_js_test/package.json:
-
 {
   "name": "next_js_test",
   "version": "1.0.0",
   "description": "Next_js test",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,20 +17,10 @@ Wrote to /home/mroberto/rpms/javascript/next_js/next_js_test/package.json:
   "bugs": {
     "url": "https://github.com/mrjimenez/next_js_test/issues"
   },
-  "homepage": "https://github.com/mrjimenez/next_js_test#readme"
+  "homepage": "https://github.com/mrjimenez/next_js_test#readme",
+  "dependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
-```
-
-1. Instalação das dependências
-
-```bash
-npm install next
-npm install react
-npm install react-dom
-```
-
-ou
-
-```bash
-npm install react react-dom next
-```
