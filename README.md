@@ -43,3 +43,9 @@ ou
 ```bash
 npm install react react-dom next
 ```
+
+```bash
+npm install gray-matter
+npm install remark remark-html
+npm install date-fns
+```
