@@ -72,9 +72,9 @@ function Contador() {
     <div>
 
       <div>{contador}</div>
-      <buton class={buttonStyles.button} class={buttonStyles.button1} onClick={adicionarContador}>Adicionar1</buton>
+      <button className={buttonStyles.button + ',' + buttonStyles.button1} onClick={adicionarContador}>Adicionar1</button>
       <br />
-      <buton class={buttonStyles.button} class={buttonStyles.button2} onClick={adicionarContador}>Adicionar2</buton>
+      <button className={buttonStyles.button + ',' + buttonStyles.button2} onClick={adicionarContador}>Adicionar2</button>
 
     </div >
   )
