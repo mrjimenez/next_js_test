@@ -1,15 +1,13 @@
-import { useState } from 'react'
-
-import buttonStyles from '../components/button1.module.css'
 import Link from 'next/link'
-
 import Head from 'next/head'
+
+import Contador from '../components/contador'
+import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
+
 import utilStyles from '../styles/utils.module.css'
 
 import { getSortedPostsData } from '../lib/posts'
-
-import Date from '../components/date'
 
 function Home({ allPostsData }) {
   return (
@@ -56,27 +54,10 @@ function Home({ allPostsData }) {
       <Contador />
 
       Read <Link href="/posts/first-post"><a>this page!</a></Link>
+      <p />
+      Or even <Link href="tempo"><a>Tempo page!</a></Link>
 
     </Layout>
-  )
-}
-
-function Contador() {
-  const [contador, setContador] = useState(1)
-
-  function adicionarContador() {
-    setContador(contador + 1)
-  }
-
-  return (
-    <div>
-
-      <div>{contador}</div>
-      <button className={buttonStyles.button + ',' + buttonStyles.button1} onClick={adicionarContador}>Adicionar1</button>
-      <br />
-      <button className={buttonStyles.button + ',' + buttonStyles.button2} onClick={adicionarContador}>Adicionar2</button>
-
-    </div >
   )
 }
 
