@@ -25,6 +25,14 @@ function Home({ allPostsData }) {
         </p>
       </section>
 
+      <h1>Home</h1>
+
+      <Contador />
+
+      Read <Link href="/posts/first-post"><a>this page!</a></Link>
+      <p />
+      Or even <Link href="tempo"><a>Tempo page!</a></Link>
+
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -48,15 +56,6 @@ function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-
-      <h1>Home</h1>
-
-      <Contador />
-
-      Read <Link href="/posts/first-post"><a>this page!</a></Link>
-      <p />
-      Or even <Link href="tempo"><a>Tempo page!</a></Link>
-
     </Layout>
   )
 }
